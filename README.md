@@ -1,8 +1,8 @@
-# 📚 Sistema de Gerenciamento de Biblioteca
+#  Sistema de Gerenciamento de Biblioteca
 
 Projeto feito em Java para praticar Programação Orientada a Objetos (POO). É um sistema simples de biblioteca que roda no console (terminal), sem banco de dados, todos os dados ficam guardados em memória enquanto o programa está rodando.
 
-## 🎯 O que o sistema faz:
+##  O que o sistema faz:
 
 - Cadastrar livros
 - Cadastrar membros (usuários da biblioteca)
@@ -11,19 +11,19 @@ Projeto feito em Java para praticar Programação Orientada a Objetos (POO). É 
 - Devolver um livro
 - Listar empréstimos em andamento
 
-## 🧠 Regras de negócio:
+##  Regras de negócio:
 
 - Um livro só pode ser emprestado se estiver disponível
 - Cada membro tem um limite de 3 livros emprestados ao mesmo tempo
 - Não é possível remover um livro que está emprestado no momento
 - Todo empréstimo tem um prazo de 14 dias para devolução
 
-## 🛠️ Tecnologias:
+##  Tecnologias:
 
 - Java (sem frameworks, sem bibliotecas externas)
 - Sem banco de dados — os dados são guardados em memória (`HashMap`) e se perdem quando o programa é fechado
 
-## 📁 Estrutura do projeto:
+##  Estrutura do projeto:
 
 O projeto é dividido em camadas, seguindo boas práticas de POO:
 
@@ -52,7 +52,7 @@ src/com/biblioteca/
 
 Essa separação facilita manutenção: se um dia eu quiser trocar o console por uma interface gráfica, ou adicionar um banco de dados de verdade, só preciso mexer em uma camada por vez, sem quebrar o resto.
 
-## ▶️ Como rodar:
+##  Como rodar:
 
 ### Pelo IntelliJ (ou outra IDE)
 1. Abra o projeto na IDE
@@ -65,7 +65,7 @@ javac com/biblioteca/*.java com/biblioteca/model/*.java com/biblioteca/repositor
 java -cp ../out com.biblioteca.Main
 ```
 
-## 🖥️ Exemplo de uso:
+##  Exemplo de uso:
 
 ```
 ===== Sistema de Gerenciamento de Biblioteca =====
@@ -80,7 +80,7 @@ java -cp ../out com.biblioteca.Main
 Escolha uma opção:
 ```
 
-## 🚧 Possíveis melhorias futuras:
+##  Possíveis melhorias futuras:
 
 - [ ] Impedir cadastro de matrícula/ISBN duplicados
 - [ ] Persistir os dados em arquivo ou banco de dados
@@ -88,6 +88,6 @@ Escolha uma opção:
 - [ ] Adicionar reserva de livros
 - [ ] Refatorar os repositórios para usar uma interface genérica
 
-## 📌 Sobre:
+##  Sobre:
 
 Projeto feito para estudo de Java e POO (encapsulamento, separação de responsabilidades entre camadas, uso de enums, exceções personalizadas e boas práticas de modelagem de classes).
